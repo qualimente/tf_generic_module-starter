@@ -1,0 +1,26 @@
+---
+driver:
+  name: terraform
+  root_module_directory: test/fixtures/minimal
+  variable_files:
+    - "test/fixtures/minimal/minimal.tfvars"
+  color: false
+  # increase kitchen's command timeout to 1 hour; useful for slow-provisioning resources
+  command_timeout: 3600
+
+provisioner:
+  name: terraform
+
+platforms:
+  - name: aws
+
+verifier:
+  name: terraform
+  format: doc
+  groups:
+    - name: terraform
+      controls:
+        - terraform_state
+        - starter
+suites:
+  - name: minimal
