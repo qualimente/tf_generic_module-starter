@@ -4,9 +4,9 @@ tf_generic_module-starter contains a forkable starting point for a generic Terra
 
 Features:
 
-- [ ] Portable, codified, hygienic build process using Docker
-- [ ] Preconfigured Test Fixtures
-- [ ] Best practices baked-in for high velocity development
+- [X] Portable, codified, hygienic build process using Docker
+- [X] Preconfigured Test Fixtures
+- [X] Best practices baked-in for high velocity development
 
 ## Local Development and Testing
 
